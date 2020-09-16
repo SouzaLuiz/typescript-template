@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsnd --respawn --ignore-watch node_modules --transpile-only src/index.ts",
     "build": "rimraf ./dist && tsc",
-    "start": "yarn build && node ./dist/index.js"
+    "start": "yarn install && yarn build && node ./dist/index.js"
   },
   "dependencies": {
     "express": "^4.17.1",
