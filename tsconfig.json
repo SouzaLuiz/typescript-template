@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2017",
+    "target": "ES5",
     "module": "commonjs",
     "allowJs": true,
     "outDir": "./dist",
@@ -11,12 +11,10 @@
   },
   "include": [
     "src/*.ts",
-    "src/**/*.ts",
-    "src/**/*.js"
+    "src/**/*.ts"
   ],
   "exclude": [
     "node_modules",
-    "src/**/*.spec.ts",
-    "src/**/*.spec.js"
+    "src/**/*.spec.ts"
   ]
 }
