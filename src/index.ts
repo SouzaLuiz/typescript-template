@@ -1,8 +1,9 @@
-import express from 'express'
-const app = express()
+import express from 'express';
 
-app.get('/', (req, res) => {
-  return res.json({ ok: true })
-})
+import routes from './routes';
 
-app.listen(process.env.PORT || 3333)
+const app = express();
+
+app.use(routes);
+
+app.listen(process.env.PORT || 3333);
